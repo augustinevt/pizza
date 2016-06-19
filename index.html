@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <div class="formWrapper">
+
+
     <form class="" action="index.html" method="post">
-      <input type="text" id="toppingOne">
-      <input type="text" id="toppingTwo">
-      <input type="text" id="toppingThree">
-      <input type="radio" name="name" value="small">small
-      <input type="radio" name="name" value="medium">medium
-      <input type="radio" name="name" value="large">large
-      <button type="button" id="makePizza"></button>
+
+      <div class="sizeContainer">
+        <label>
+          <input type="radio" name="size" value="small"><img src="https://www.pizzahut.com/assets/w/tile/thor/Pepperoni_Lovers_Pizza.png" alt="smallPizza" />
+        </label>
+        <label>
+          <input type="radio" name="size" value="small"><img src="https://www.pizzahut.com/assets/w/tile/thor/Pepperoni_Lovers_Pizza.png" alt="smallPizza" />
+        </label>
+        <label>
+          <input type="radio" name="size" value="small"><img src="https://www.pizzahut.com/assets/w/tile/thor/Pepperoni_Lovers_Pizza.png" alt="smallPizza" />
+        </label>
+      </div>
+
+
+      <div class="toppingsContainer">
+        <h3>Choose three of any toppings you can think of!</h3>
+        <input type="text" id="toppingOne" class="toppingField">
+        <input type="text" id="toppingTwo" class="toppingField">
+        <input type="text" id="toppingThree" class="toppingField">
+        <button type="button" id="makePizza">submit</button>
+      </div>
+
+
+
 
     </form>
-
+  </div>
     <div id="cloud">
       <div id="displayPizza">
-        <h1 class="price">h</h1>
-        <h6 class="toppingOne">h</h6>
-        <h6 class="toppingTwo">h</h6>
-        <h6 class="toppingThree">h</h6>
+        <h1 class="price"></h1>
+        <h6 class="toppingOne"></h6>
+        <h6 class="toppingTwo"></h6>
+        <h6 class="toppingThree"></h6>
       </div>
     </div>
 
-  </body>
+
+</body>
 </html>
