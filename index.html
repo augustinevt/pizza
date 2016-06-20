@@ -8,20 +8,28 @@
   <title></title>
 </head>
 <body>
+
+  <h1>Welcome to PizzaTown!</h1>
+  <h2>select a size and some toppings!</h2>
   <div class="formWrapper">
 
 
     <form class="" action="index.html" method="post">
 
       <div class="sizeContainer">
+        <h3>Choose a size!</h3>
         <label>
-          <input type="radio" name="size" value="small"><img src="https://www.pizzahut.com/assets/w/tile/thor/Pepperoni_Lovers_Pizza.png" alt="smallPizza" />
+          <span class='inches'>12"</span>
+          <input type="radio" name="size" value="small"><img src="pizza1.png" alt="smallPizza" />
         </label>
         <label>
-          <input type="radio" name="size" value="small"><img src="https://www.pizzahut.com/assets/w/tile/thor/Pepperoni_Lovers_Pizza.png" alt="smallPizza" />
+          <input type="radio" name="size" value="medium">
+          <img src="pizza1.png" alt="smallPizza" />
+          <span class='inches'>15"</span>
         </label>
         <label>
-          <input type="radio" name="size" value="small"><img src="https://www.pizzahut.com/assets/w/tile/thor/Pepperoni_Lovers_Pizza.png" alt="smallPizza" />
+          <span class='inches'>24"</span>
+          <input type="radio" name="size" value="large"><img src="pizza1.png" alt="smallPizza" />
         </label>
       </div>
 
@@ -31,7 +39,7 @@
         <input type="text" id="toppingOne" class="toppingField">
         <input type="text" id="toppingTwo" class="toppingField">
         <input type="text" id="toppingThree" class="toppingField">
-        <button type="button" id="makePizza">submit</button>
+        <button type="button" id="makePizza">PLACE ORDER!</button>
       </div>
 
 
@@ -41,10 +49,14 @@
   </div>
     <div id="cloud">
       <div id="displayPizza">
-        <h1 class="price"></h1>
-        <h6 class="toppingOne"></h6>
-        <h6 class="toppingTwo"></h6>
-        <h6 class="toppingThree"></h6>
+
+        <p>
+          Thank you for your patronage!<br> You ordered a <span class="size"></span> pizza with <span class="toppingOne"></span>, <span class="toppingTwo"></span> and <span class="toppingThree"></span>!<br> Your total is $<span class="price"></span>
+        </p>
+
+        <!-- <h1>$<span class="price"></span></h1> -->
+
+
       </div>
     </div>
 

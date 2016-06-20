@@ -2,6 +2,7 @@ function Pizza(toppingOne, toppingTwo, toppingThree, size) {
   this.toppingOne = toppingOne;
   this.toppingTwo = toppingTwo;
   this.toppingThree = toppingThree;
+  // this.toppingFour = toppingFour;
   this.size = size;
 }
 
@@ -29,10 +30,17 @@ $(function(){
     console.log(pizza);
     $('#cloud').show();
     $('#displayPizza').show();
+      $('#displayPizza .size').text(pizza.size);
     $('#displayPizza .price').text(pizza.price());
     $('#displayPizza .toppingOne').text(pizza.toppingOne);
     $('#displayPizza .toppingTwo').text(pizza.toppingTwo);
     $('#displayPizza .toppingThree').text(pizza.toppingThree);
+  //   $('#displayPizza .toppingFour').text(pizza.toppingFour);
+  });
+
+  $("#displayPizza").click(function(){
+    $('#cloud').fadeOut();
+    $('#displayPizza').fadeOut();
   });
 
 
